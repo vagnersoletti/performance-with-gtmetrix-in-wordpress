@@ -9,7 +9,7 @@ include_once WP_PLUGIN_DIR.'/performance-with-gtmetrix-in-wp/functions/function.
         <div class="gtmetrix-actions-right">
             <a href="https://gtmetrix.com/pro/" target="_blank" class="gtmetrix button-secondary">Informações sobre créditos</a>
             <button class="gtmetrix-button" id="test-performance">
-                <img src="<?php echo plugins_url('/gtmetrix/img/play.svg'); ?>" width="16"> Realizar teste
+                <img src="<?php echo plugins_url('/performance-with-gtmetrix-in-wp/img/play.svg'); ?>" width="16"> Realizar teste
             </button>
         </div>
     </div>

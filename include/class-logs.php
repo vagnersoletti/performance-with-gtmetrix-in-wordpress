@@ -28,7 +28,7 @@ class Logs {
             }
         }
         $data = date('Y-m-d H:i:s')." - ".$text.PHP_EOL;
-        file_put_contents(WP_CONTENT_DIR . '/plugins/gtmetrix/'.$dir.$filename, $data, FILE_APPEND);
+        file_put_contents(WP_CONTENT_DIR . '/plugins/performance-with-gtmetrix-in-wp/'.$dir.$filename, $data, FILE_APPEND);
 
     }
 
@@ -48,7 +48,7 @@ class Logs {
             }
         }
         $data = date('Y-m-d H:i:s')." - ERROR - ".$text.PHP_EOL;
-        file_put_contents(WP_CONTENT_DIR . '/plugins/gtmetrix/'.$dir.$filename, $data, FILE_APPEND);
+        file_put_contents(WP_CONTENT_DIR . '/plugins/performance-with-gtmetrix-in-wp/'.$dir.$filename, $data, FILE_APPEND);
 
     }
 
