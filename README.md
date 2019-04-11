@@ -1,5 +1,6 @@
 ### Performance with GTmetrix in WordPress
 Contributors: Vagner Luis Soletti and Vitor Cardoso
+
 Tags: performance, gtmetrix, monitoring, plugin, wordpress, community
 
 
