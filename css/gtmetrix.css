@@ -1,0 +1,375 @@
+button,
+a,
+button:focus,
+a:focus{
+    outline: none;
+    box-shadow: none;
+    color: #00a0d2;
+}
+
+#gtmetrix-message-container input,
+#gtmetrix-message-container label{
+    display: block;
+    min-width: 30%;
+}
+
+#gtmetrix-message-container label{
+    margin-top: 20px;
+}
+
+#gtmetrix-dashboard {
+    display: inline-block;
+    width: 100%;
+}
+
+#gtmetrix-dashboard .report-servers{
+    width: 100%;
+    float: left;
+}
+
+#gtmetrix-dashboard .report-scores{
+    margin-right: 2%;
+    width: 38%;
+    float: left;
+}
+
+#gtmetrix-dashboard .report-page-details {
+    margin-right: 0%;
+    width: 60%;
+    float: left;
+}
+
+#gtmetrix-dashboard .report-servers .box,
+#gtmetrix-dashboard .report-scores .box,
+#gtmetrix-dashboard .report-page-details .box{
+    padding: 0px;
+    background: linear-gradient(#fff,#eaeaea);
+    border: 4px solid #e0e0e0;
+    min-height: 120px;
+}
+
+#gtmetrix-dashboard .report-servers .report-server, 
+#gtmetrix-dashboard .report-scores .report-score, 
+#gtmetrix-dashboard .report-page-details .report-page-detail {
+    float: left;
+    border-right: 1px solid #e0e0e0;
+    min-height: 110px;
+    padding: 5px 0 0 15px;
+}
+
+#gtmetrix-dashboard .report-servers .report-server {
+    width: 20%;
+}
+
+#gtmetrix-dashboard .report-scores .report-score {
+    width: 49.9999%;
+}
+
+#gtmetrix-dashboard .report-page-details .report-page-detail {
+    width: 33.333%;
+}
+
+.gtmetrix-wrap h3 {
+    color: #004085;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.gtmetrix-wrap h4 {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+    margin: 0px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+}
+
+.gtmetrix-wrap h5 {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+
+#gtmetrix-dashboard .report-score-grade, 
+#gtmetrix-dashboard .report-page-detail-value{
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#gtmetrix-dashboard .report-server .report-score-grade, 
+#gtmetrix-dashboard .report-server .report-page-detail-value{
+    font-size: 2.5em;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-A{
+    color: #23AB11;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-B{
+    color:#71BB30;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-C{
+    color: #CBB708;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-D{
+    color: #E29B20;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-E{
+    color: #BB4A12;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-F{
+    color: #EB393B;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-F {
+    color: #443333;
+}
+
+#gtmetrix-dashboard .report-score-grade.color-grade-na{
+    background-color: #D1D1D1;
+    color: #666666;
+}
+
+#gtmetrix-view-report{
+    margin: 10px 0 0 0;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+}
+
+#gtmetrix-view-report a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gtmetrix-wrap * {
+    box-sizing: border-box;
+}
+
+.gtmetrix-wrap {
+    font-family: "Roboto",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #666;
+    letter-spacing: -.25px;
+    margin: 30px 30px 0 10px;
+}
+
+.gtmetrix-wrap .gtmetrix-button, 
+.gtmetrix-wrap a.gtmetrix-button, 
+.gtmetrix-wrap button.gtmetrix-button {
+    width: auto;
+    min-width: 80px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -.25px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    transition: all .3s ease;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #004085;
+    font-weight: bold;
+}
+.gtmetrix-wrap .gtmetrix-button:hover, 
+.gtmetrix-wrap .gtmetrix-button:active, 
+.gtmetrix-wrap .gtmetrix-button:focus, 
+.gtmetrix-wrap a.gtmetrix-button:hover, 
+.gtmetrix-wrap a.gtmetrix-button:focus, 
+.gtmetrix-wrap a.gtmetrix-button:active, 
+.gtmetrix-wrap button.gtmetrix-button:active,
+.gtmetrix-wrap button.gtmetrix-button:focus,
+.gtmetrix-wrap button.gtmetrix-button:hover {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d;
+}
+
+.gtmetrix-wrap .gtmetrix-button img{
+    position: relative;
+    top: 2px;
+    right: 3px;
+}
+
+.gtmetrix.button-secondary{
+    min-height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    position: relative;
+    padding: 0px 20px;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -.25px;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    transition: all .3s ease;
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #856404;
+    font-weight: normal;
+}
+
+.gtmetrix-wrap .gtmetrix-button.gtmetrix-button-ghost, 
+.gtmetrix-wrap a.gtmetrix-button.gtmetrix-button-ghost, 
+.gtmetrix-wrap button.gtmetrix-button.gtmetrix-button-ghost {
+    padding: 9px 20px 10px;
+    border: 2px solid #0c5460;
+    background: transparent;
+    color: #0c5460;
+    font-weight: normal;
+}
+
+.gtmetrix-wrap .gtmetrix-header-title {
+    color: #333;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -.25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.gtmetrix-wrap .gtmetrix-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.gtmetrix-page-header {
+    overflow: hidden;
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+.gtmetrix-wrap .gtmetrix-actions-right {
+    float: right;
+    display: inline-block;
+    font-size: 13px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.gtmetrix-wrap .gtmetrix-box {
+    min-height: 20px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.gtmetrix-wrap .gtmetrix-box.graphics {
+    min-height: 480px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 49.5%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 40px;
+}
+
+.gtmetrix-wrap .gtmetrix-box.graphics:last-child {
+    margin-right: 0%;
+}
+
+.gtmetrix-wrap .loading{
+    display: none;
+    background: rgba(255, 255, 255, 1) url(../img/loading.gif) no-repeat center 40%;
+    width: 98%;
+    height: 84%;
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 14%;
+}
+
+.wp-list-table .loading {
+    width: 150px; 
+    line-height: 25px; 
+    height: 25px; 
+    background-color: #dbdbdb;
+}
+
+.wp-list-table .loader {
+    height: 25px; 
+    line-height: 25px; 
+    padding-left: 5px; 
+    color: #fff; 
+}
+
+.wp-list-table .grid-score-grade.background-grade-A{
+    background-color: #23AB11;
+}
+
+.wp-list-table .grid-score-grade.background-grade-B{
+    background-color:#71BB30;
+}
+
+.wp-list-table .grid-score-grade.background-grade-C{
+    background-color: #CBB708;
+}
+
+.wp-list-table .grid-score-grade.background-grade-D{
+    background-color: #E29B20;
+}
+
+.wp-list-table .grid-score-grade.background-grade-E{
+    background-color: #BB4A12;
+}
+
+.wp-list-table .grid-score-grade.background-grade-F{
+    background-color: #EB393B;
+}
+
+.wp-list-table .grid-score-grade.background-grade-F {
+    background-color: #443333;
+}
+
+.wp-list-table .grid-score-grade.background-grade-na{
+    background-color: #666666;
+}
