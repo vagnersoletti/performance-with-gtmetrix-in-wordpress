@@ -54,10 +54,14 @@ class Ajax_Requests {
 
           
             $urlChange = explode('/', $url_to_test);
-            $ch = curl_init();  
-            curl_setopt( $ch, CURLOPT_URL, $urlChange[2]);
-            curl_exec( $ch );
-            $serverLog = curl_getinfo($ch);
+            $ch = curl_init($urlChange[2]);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            $response = curl_exec($ch);
+            $connect_time = curl_getinfo($ch, CURLINFO_CONNECT_TIME);
+            $namelookup_time = curl_getinfo($ch, CURLINFO_NAMELOOKUP_TIME);
+            $pretransfer_time = curl_getinfo($ch, CURLINFO_PRETRANSFER_TIME);
+            $starttranfer_time = curl_getinfo($ch, CURLINFO_STARTTRANSFER_TIME);
+            $total_time = curl_getinfo($ch, CURLINFO_TOTAL_TIME);
 
             $table_name = $wpdb->prefix . "gtmetrix_log_server";
             $wpdb->insert($table_name, array( 'dstime' => $serverLog['namelookup_time'], 
@@ -85,11 +89,11 @@ class Ajax_Requests {
                     'fully_loaded_time' => $results['fully_loaded_time']/1000, 
                     'page_bytes'        => By2M($results['page_bytes']), 
                     'page_elements'     => $results['page_elements'], 
-                    'dstime'            => number_format($serverLog['namelookup_time'], 3, '.', ''),
-                    'tcptime'           => number_format($serverLog['connect_time'], 3, '.', ''),
-                    'filestime'         => number_format($serverLog['pretransfer_time'], 3, '.', ''),
-                    'bytetime'          => number_format($serverLog['starttransfer_time'], 3, '.', ''),
-                    'totaltime'         => number_format($serverLog['total_time'], 3, '.', ''),
+                    'dstime'            => number_format($namelookup_time, 3, '.', ''),
+                    'tcptime'           => number_format($connect_time, 3, '.', ''),
+                    'filestime'         => number_format($pretransfer_time, 3, '.', ''),
+                    'bytetime'          => number_format($starttranfer_time, 3, '.', ''),
+                    'totaltime'         => number_format($total_time, 3, '.', ''),
                     'lastTesteDashboad' => date( 'd/m/y', strtotime('now')) .' às '.date( 'g:i A', strtotime('now'))
                 )
             );
