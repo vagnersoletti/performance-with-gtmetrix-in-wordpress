@@ -32,7 +32,7 @@ class Ajax_Requests {
      */
     public function request_services_gtmetrix() {
 
-        include_once WP_PLUGIN_DIR.'/performance-with-gtmetrix-in-wp/functions/function.php';
+        include_once WP_PLUGIN_DIR.'/performance-with-gtmetrix-in-wordpress/functions/function.php';
 
         global $wpdb;
 

@@ -12,7 +12,7 @@ With it you can perform performance analysis, check previously performed analysi
 
 ### Installation
 
-1. Upload `performance-with-gtmetrix-in-wp` to the `/wp-content/plugins/` directory
+1. Upload `performance-with-gtmetrix-in-wordpress` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Connect the Performance with GTmetrix in WordPress with your GTmetrix account
 

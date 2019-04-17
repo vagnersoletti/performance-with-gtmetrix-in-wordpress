@@ -42,7 +42,7 @@ class menu {
                 'manage_options', 
                 'gtmetrix-dashboard', 
                 array( $this->pages, 'dashboard' ),
-                plugins_url('/performance-with-gtmetrix-in-wp/img/dashboard.png')
+                plugins_url('/performance-with-gtmetrix-in-wordpress/img/dashboard.png')
             );
 
             add_submenu_page(
@@ -80,7 +80,7 @@ class menu {
                 'manage_options', 
                 'gtmetrix-register', 
                 array( $this->pages, 'register' ) ,
-                plugins_url('/performance-with-gtmetrix-in-wp/img/dashboard.png')
+                plugins_url('/performance-with-gtmetrix-in-wordpress/img/dashboard.png')
             );
 
         }

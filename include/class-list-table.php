@@ -14,7 +14,7 @@ class List_Table extends WP_List_Table {
    
     function __construct(){
         global $status, $page;
-        include_once WP_PLUGIN_DIR.'/performance-with-gtmetrix-in-wp/functions/function.php';
+        include_once WP_PLUGIN_DIR.'/performance-with-gtmetrix-in-wordpress/functions/function.php';
 
         //Set parent defaults
         parent::__construct( array(
